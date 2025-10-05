@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Clause55 Copilot Report</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  {{ branding | safe }}
+  <header>
+    <h1>Clause 55 Assessment – {{ site.name }}</h1>
+    <p class="meta">{{ site.address }}</p>
+    <p class="meta">Assessment date: {{ spec.analysis_date.strftime('%d %B %Y') }}</p>
+  </header>
+  <main>
+    <section>
+      <h2>Clause Matrix</h2>
+      <table class="matrix">
+        <thead>
+          <tr><th>Clause</th><th>Title</th><th>Status</th><th>Metrics</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          {% for result in results %}
+          <tr>
+            <td>{{ result.clause_id }}</td>
+            <td>{{ result.title }}</td>
+            <td class="status {{ result.status.value|lower|replace('/', '-') }}">{{ result.status.value }}</td>
+            <td>
+              {% if result.metrics %}
+                <ul>
+                {% for key, value in result.metrics.items() %}
+                  <li><strong>{{ key }}</strong>: {{ '%.2f'|format(value) if value is number else value }}</li>
+                {% endfor %}
+                </ul>
+              {% else %}
+                <span>—</span>
+              {% endif %}
+            </td>
+            <td>{{ result.notes }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Solar access metrics</h2>
+      {% if metrics %}
+      {% for name, data in metrics.items() %}
+      <article class="spos-metrics">
+        <h3>{{ name }}</h3>
+        <p>Total area: {{ '%.1f'|format(data['area']) }} m² · Min continuous sun: {{ '%.1f'|format(data['min_continuous_sun_hours']) }} h</p>
+        <ul>
+          {% for key, value in data.items() if key.startswith('sunlit_') %}
+          <li>{{ key.split('_')[-1] }} sunlit: {{ '%.1f'|format(value) }} m²</li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+      {% else %}
+      <p>No SPOS provided.</p>
+      {% endif %}
+    </section>
+
+    <section>
+      <h2>Shadow totals</h2>
+      <table class="matrix">
+        <thead><tr><th>Time</th><th>Shadow area (m²)</th></tr></thead>
+        <tbody>
+        {% for time, value in shadow_totals.items() %}
+          <tr><td>{{ time }}</td><td>{{ '%.1f'|format(value) }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    {% if property_report %}
+    <section>
+      <h2>Property data</h2>
+      <p>Planning scheme: {{ property_report.planning_scheme }} · Responsible authority: {{ property_report.council }}</p>
+      <p>Zones: {{ property_report.zones | join(', ') if property_report.zones else 'None' }}</p>
+      <p>Overlays: {{ property_report.overlays | join(', ') if property_report.overlays else 'None' }}</p>
+    </section>
+    {% endif %}
+
+    <section>
+      <h2>Citations</h2>
+      <ol>
+        {% for citation in citations %}
+          <li>{{ citation }}</li>
+        {% endfor %}
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

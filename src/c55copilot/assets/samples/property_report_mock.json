@@ -1,0 +1,10 @@
+{
+  "address": "123 Example Street, Fitzroy VIC",
+  "planning_scheme": "Yarra Planning Scheme",
+  "council": "City of Yarra",
+  "zones": ["GRZ1"],
+  "overlays": ["DDO16"],
+  "citations": [
+    "VicPlan mock property report (offline)"
+  ]
+}

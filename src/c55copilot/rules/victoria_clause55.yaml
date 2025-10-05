@@ -1,0 +1,47 @@
+rules:
+  - id: 55.01-1
+    title: Site and context description
+    handler: b1_site_context:site_description
+    citations:
+      - "Clause 55.01-1 Site and context description"
+  - id: 55.02-1
+    title: Neighbourhood character
+    handler: b2_neighbourhood:neighbourhood_character
+    citations:
+      - "Clause 55.02-1 Neighbourhood character objectives"
+  - id: 55.03-5
+    title: Solar access to open space
+    handler: b3_solar_daylight:solar_access
+    citations:
+      - "Clause 55.03-5 Daylight to existing windows"
+      - "Clause 55.04-5 Overshadowing open space"
+  - id: 55.04-3
+    title: Daylight to habitable room windows
+    handler: b3_solar_daylight:daylight_to_habitable_rooms
+    citations:
+      - "Clause 55.04-3 Daylight to habitable room windows"
+  - id: 55.04-1
+    title: Side and rear setbacks
+    handler: b4_amenity_impacts:side_and_rear_setbacks
+    citations:
+      - "Clause 55.04-1 Side and rear setbacks"
+  - id: 55.04-2
+    title: Walls on boundaries
+    handler: b4_amenity_impacts:walls_on_boundaries
+    citations:
+      - "Clause 55.04-2 Walls on boundaries"
+  - id: 55.04-6
+    title: Overlooking secluded private open space
+    handler: b4_amenity_impacts:overlooking_to_spos
+    citations:
+      - "Clause 55.04-6 Overlooking"
+  - id: 55.05-4
+    title: Rooftop solar protection
+    handler: b5_energy_solar:rooftop_solar_protection
+    citations:
+      - "Clause 55.05-4 Solar access"
+  - id: 55.05-5
+    title: Rooftop solar provision
+    handler: b5_energy_solar:rooftop_solar_provision
+    citations:
+      - "Clause 55.05-5 Solar energy"

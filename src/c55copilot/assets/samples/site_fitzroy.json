@@ -1,0 +1,14 @@
+{
+  "name": "123 Example Street",
+  "address": "123 Example Street, Fitzroy VIC",
+  "latitude": -37.7996,
+  "longitude": 144.9780,
+  "timezone": "Australia/Melbourne",
+  "boundary": [[0, 0], [20, 0], [20, 30], [0, 30], [0, 0]],
+  "spos": [
+    {
+      "name": "Rear Garden",
+      "polygon": [[5, 20], [15, 20], [15, 28], [5, 28], [5, 20]]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "buildings": [
+    {
+      "name": "Dwelling A",
+      "footprint": [[2, 2], [9, 2], [9, 15], [2, 15], [2, 2]],
+      "height": 6.5,
+      "roof_type": "flat",
+      "openings": [
+        {
+          "name": "Living A",
+          "sill_height": 1.0,
+          "head_height": 2.4,
+          "centre": [5.5, 15],
+          "orientation": 180
+        }
+      ]
+    },
+    {
+      "name": "Dwelling B",
+      "footprint": [[11, 2], [18, 2], [18, 15], [11, 15], [11, 2]],
+      "height": 6.5,
+      "roof_type": "flat",
+      "openings": [
+        {
+          "name": "Living B",
+          "sill_height": 1.0,
+          "head_height": 2.4,
+          "centre": [14.5, 15],
+          "orientation": 180
+        }
+      ]
+    }
+  ]
+}
