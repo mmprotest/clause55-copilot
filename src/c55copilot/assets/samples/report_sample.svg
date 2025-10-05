@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" fill="#F7F7F8"/>
+  <rect x="40" y="40" width="880" height="80" rx="12" fill="#1F2937"/>
+  <text x="80" y="95" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="600" fill="#FFFFFF">Clause 55 Copilot – Sample Report</text>
+  <rect x="40" y="140" width="420" height="320" rx="16" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="64" y="188" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#111827">Clause summary</text>
+  <text x="64" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#374151">55.04-5 Overshadowing open space</text>
+  <rect x="64" y="244" width="160" height="32" rx="16" fill="#10B981"/>
+  <text x="84" y="266" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">PASS</text>
+  <text x="64" y="306" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#374151">55.04-6 Overlooking</text>
+  <rect x="64" y="322" width="160" height="32" rx="16" fill="#F59E0B"/>
+  <text x="84" y="344" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">ACTION</text>
+  <text x="64" y="386" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#374151">55.05-1 Daylight to habitable rooms</text>
+  <rect x="64" y="402" width="160" height="32" rx="16" fill="#EF4444"/>
+  <text x="84" y="424" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">FAIL</text>
+  <rect x="500" y="140" width="420" height="320" rx="16" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="524" y="188" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#111827">Overshadowing 11:00</text>
+  <rect x="544" y="208" width="332" height="212" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" rx="12"/>
+  <rect x="644" y="260" width="120" height="120" fill="#1D4ED8" opacity="0.9" rx="12"/>
+  <rect x="580" y="292" width="90" height="90" fill="#22D3EE" opacity="0.6" rx="12"/>
+  <rect x="720" y="320" width="90" height="90" fill="#FCD34D" opacity="0.7" rx="12"/>
+  <text x="544" y="442" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#374151">Sunlit SPOS: 78 m² (86%)</text>
+  <text x="544" y="468" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#374151">Minimum sunlight window: 3 hrs</text>
+  <text x="40" y="496" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#6B7280">Generated with scripts/generate_sample_pack.sh</text>
+</svg>

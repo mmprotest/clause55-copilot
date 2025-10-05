@@ -1,0 +1,62 @@
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  color: #1a1a1a;
+}
+
+.cover {
+  background: linear-gradient(135deg, #1f2937, #4b5563);
+  color: #f9fafb;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-content {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #111827;
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.matrix th, .matrix td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.status.pass {
+  color: #047857;
+}
+
+.status.fail {
+  color: #b91c1c;
+}
+
+.status.n-a {
+  color: #6b7280;
+}
+
+.watermark {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+  color: rgba(15, 23, 42, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+section {
+  margin-bottom: 2rem;
+}
